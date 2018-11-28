@@ -1,2 +1,1 @@
-# cypress-openshift
-cypress on openshift
+Cypress-io on OpenShift
