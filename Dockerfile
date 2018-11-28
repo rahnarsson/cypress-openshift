@@ -15,13 +15,3 @@ RUN yum install -y GConf2*
 # provides libasound
 RUN yum install -y alsa-lib*
 RUN yum install -y openssl
-
-RUN chown -R 1001:0 $HOME && \
-    chmod -R g+rw $HOME
-
-USER 1001
-
-RUN chown -R 1001:0 $HOME && \
-    chmod -R g+rw $HOME
-
-USER 1001
