@@ -1,0 +1,18 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "cypress-jenkins-slave" 
+spec:
+  source: 
+    type: "Git"
+    git:
+      uri: "https://github.com/rahnarsson/cypress-openshift"
+  output:
+    to: 
+      kind: "ImageStreamTag"
+      name: "cypress-jenkins-slave:latest"
+  strategy: 
+    type: "Docker"
+    to:
+      kind: "ImageStreamTag"
+      name: "cypress-jenkins-slave:latest"
