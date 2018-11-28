@@ -5,6 +5,8 @@ MAINTAINER Antti Rahikainen (antti.rahikainen@iki.fi)
 # Install Cypress dependencies
 USER root
 
+RUN yum repolist
+
 RUN yum-config-manager --enable rhel-server-rhscl-7-rpms
 RUN yum-config-manager --enable rhel-7-server-optional-rpms
 RUN yum install -y xorg-x11-server-Xvfb
