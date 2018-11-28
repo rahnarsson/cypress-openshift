@@ -1,4 +1,4 @@
-FROM openshift/jenkins-slave-base-centos7
+FROM registry.access.redhat.com/openshift3/jenkins-agent-nodejs-8-rhel7
 
 MAINTAINER Antti Rahikainen (antti.rahikainen@iki.fi)
 
